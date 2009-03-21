@@ -1,12 +1,13 @@
-%define name drakx-installer-binaries
+%define base_name drakx-installer-binaries
+%define name %{base_name}-tmb
 %define version 1.36
 %define release %mkrel 1
 
-Summary: DrakX binaries
+Summary: DrakX binaries for kernel-tmb
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: %{base_name}-%{version}.tar.bz2
 License: GPL
 Group: Development/Other
 Url: http://wiki.mandriva.com/Tools/DrakX
@@ -26,17 +27,17 @@ BuildRequires: flex byacc pciutils-devel
 Requires: ldetect-lst
 
 %description
-binaries needed to build Mandriva installer (DrakX)
+binaries needed to build Mandriva installer (DrakX) based on kernel-tmb
 
 %package probe
 Summary: DrakX probe-modules tool
 Group: Development/Other
 
 %description probe
-probe-modules tool needed to build Mandriva live
+probe-modules tool needed to build Mandriva live based on kernel-tmb
 
 %prep
-%setup -q
+%setup -q -n %{base_name}-%{version}
 
 %build
 make -C mdk-stage1
