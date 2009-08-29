@@ -8,6 +8,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{base_name}-%{version}.tar.bz2
+Patch0:	 %{base_name}-tmb.patch
 License: GPL
 Group: Development/Other
 Url: http://wiki.mandriva.com/Tools/DrakX
@@ -38,6 +39,7 @@ probe-modules tool needed to build Mandriva live based on kernel-tmb
 
 %prep
 %setup -q -n %{base_name}-%{version}
+%patch0 -p1 -b .tmb
 
 %build
 make -C mdk-stage1
