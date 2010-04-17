@@ -1,7 +1,7 @@
 %define base_name drakx-installer-binaries
 %define name %{base_name}-tmb
-%define version 1.42
-%define release %mkrel 3
+%define version 1.45
+%define release %mkrel 1
 
 Summary: DrakX binaries for kernel-tmb
 Name: %{name}
@@ -20,7 +20,7 @@ BuildRequires: ldetect-lst >= 0.1.222
 BuildRequires: ldetect-lst-devel
 BuildRequires: dietlibc-devel
 BuildRequires: modprobe-devel
-BuildRequires: pciutils-devel
+BuildRequires: pciutils-devel >= 3.1.7-2
 BuildRequires: zlib-devel
 BuildRequires: flex byacc pciutils-devel
 
