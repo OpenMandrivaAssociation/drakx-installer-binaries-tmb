@@ -1,7 +1,7 @@
 %define base_name drakx-installer-binaries
 %define name %{base_name}-tmb
 %define version 1.46
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: DrakX binaries for kernel-tmb
 Name: %{name}
