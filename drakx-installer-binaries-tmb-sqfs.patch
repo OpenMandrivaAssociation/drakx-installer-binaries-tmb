@@ -1,0 +1,14 @@
+diff -Nurp drakx-installer-binaries-1.45.orig2//mdk-stage1/config-stage1.h drakx-installer-binaries-1.45//mdk-stage1/config-stage1.h
+--- drakx-installer-binaries-1.45.orig2//mdk-stage1/config-stage1.h	2009-03-06 16:27:29.000000000 +0200
++++ drakx-installer-binaries-1.45//mdk-stage1/config-stage1.h	2010-04-17 11:47:13.458724341 +0300
+@@ -35,8 +35,8 @@
+ 
+ #define LIVE_LOCATION_REL "install/stage2/live/"
+ #define COMPRESSED_LOCATION_REL  "install/stage2/"
+-#define COMPRESSED_STAGE2_NAME "mdkinst.sqfs"
+-#define COMPRESSED_RESCUE_NAME "rescue.sqfs"
++#define COMPRESSED_STAGE2_NAME "tmbinst.sqfs"
++#define COMPRESSED_RESCUE_NAME "tmbresc.sqfs"
+ #define COMPRESSED_NAME(prefix) (IS_RESCUE ? prefix COMPRESSED_RESCUE_NAME : prefix COMPRESSED_STAGE2_NAME)
+ #define COMPRESSED_FILE_REL(prefix) COMPRESSED_NAME(prefix COMPRESSED_LOCATION_REL)
+ 
