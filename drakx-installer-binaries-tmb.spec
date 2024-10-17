@@ -12,7 +12,7 @@ Patch0:	 %{base_name}-dmraid45.patch
 Patch1:	 %{base_name}-tmb-sqfs.patch
 License: GPL
 Group: Development/Other
-Url: http://wiki.mandriva.com/Tools/DrakX
+Url: https://wiki.mandriva.com/Tools/DrakX
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: kernel
 BuildRequires: ldetect-devel >= 0.9.1
