@@ -14,6 +14,7 @@ License: GPL
 Group: Development/Other
 Url: https://wiki.mandriva.com/Tools/DrakX
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	make
 BuildRequires: kernel
 BuildRequires: ldetect-devel >= 0.9.1
 BuildRequires: ldetect-lst >= 0.1.222
